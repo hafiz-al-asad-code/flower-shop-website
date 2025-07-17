@@ -110,7 +110,19 @@
   font-size:1.5rem;
   font-weight:600;
   color:rgba(39, 39, 39, 0.8);
+}
 
+/* discount related styles */
+.discount{
+  background-color:rgba(229, 84, 115, 0.05);
+  margin-top:128px;
+  gap:186px;
+  align-items:center;
+  padding:100px 429px 100px 395px;
+}
+.discount-contents{
+  max-width:594px;
+  text-align:center;
 }
 
 /* Responsive media query */
@@ -132,5 +144,10 @@
   .customer-support{
     flex-direction: column;
     padding:30px 10px;
+  }
+  .discount{
+    flex-direction:column;
+    gap:40px;
+    padding:20px 20px;
   }
 }
