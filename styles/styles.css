@@ -1,7 +1,13 @@
 /* Shared styles */
+*{
+  box-sizing: border-box;
+}
 .container{
   max-width:1440px;
   margin:0 auto;
+}
+.display-flex{
+  display: flex;
 }
 .btn-primary{
   font-size:20px;
@@ -29,7 +35,6 @@
   height:800px;
 }
 .header-parent{
-  display:flex;
   justify-content: space-between;
   align-items: center;
   gap:97px;
@@ -66,7 +71,6 @@
 .featured-flower-card-image{
   width:464px;
   height:538px;
-  display:flex;
   justify-content: center;
   align-items: flex-end;
   border-top-left-radius:300px;
@@ -93,6 +97,22 @@
   color:rgb(39, 39, 39);
 }
 
+/* customer support related styled */
+.customer-support{
+  background-color:rgba(39, 39, 39, 0.05);
+  justify-content: space-between;
+  text-align:center;
+  padding:85px 175px;
+  gap:100px;
+  margin-top:128px;
+}
+.support-title{
+  font-size:1.5rem;
+  font-weight:600;
+  color:rgba(39, 39, 39, 0.8);
+
+}
+
 /* Responsive media query */
 @media screen and (max-width:576px){
   .header-parent{
@@ -108,5 +128,9 @@
   }
   .featured-flower-card-image{
     width:100%;
+  }
+  .customer-support{
+    flex-direction: column;
+    padding:30px 10px;
   }
 }
