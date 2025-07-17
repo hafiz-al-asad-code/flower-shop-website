@@ -1,0 +1,112 @@
+/* Shared styles */
+.container{
+  max-width:1440px;
+  margin:0 auto;
+}
+.btn-primary{
+  font-size:20px;
+  font-weight: 700;
+  color:rgb(255, 255, 255);
+  padding:20px 43px;
+  background-color:rgb(229, 84, 115);
+  border-radius:8px;
+  border:none;
+}
+.title-primary{
+  font-size:40px;
+  font-weight:800;
+  color:rgb(39, 39, 39);
+}
+.subtitle-primary{
+  font-size:18px;
+  font-weight:400;
+  color:rgba(39, 39, 39, 0.6);
+}
+
+/* Header styles */
+.header-image img{
+  width:635px;
+  height:800px;
+}
+.header-parent{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:97px;
+  background-color:rgba(229, 84, 115, 0.1);
+  padding-left:240px;
+  padding-right:240px;
+
+}
+.header-title{
+  font-size:80px;
+  font-weight: 800;
+  color: rgb(39, 39, 39);
+}
+.header-subtitle{
+  font-size:18px;
+  font-weight:400;
+  color:rgba(39, 39, 39, 0.6);
+}
+.header-contents{
+  max-width: 708px;
+}
+
+/* Featured Flowers styles */
+.featured-flowers-cards-parent{
+  display: flex;
+  gap:24px;
+  justify-content:space-between;
+  margin-top:48px;
+}
+.featured-flowers-cards-parent img{
+  width:310px;
+  height:428px;
+}
+.featured-flower-card-image{
+  width:464px;
+  height:538px;
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-top-left-radius:300px;
+  border-top-right-radius:300px;
+}
+.one{
+  background-color: rgba(167, 33, 98, 0.15);
+}
+.two{
+  background-color: rgba(5, 151, 160, 0.15);
+}
+.three{
+  background-color: rgba(71, 125, 17, 0.15);
+}
+.featured-flowers{
+  text-align: center;
+  margin-top:178px;
+}
+.featured-flower-card-title{
+  font-size:24px;
+  font-weight:700;
+}
+.featured-flower-card-title a{
+  color:rgb(39, 39, 39);
+}
+
+/* Responsive media query */
+@media screen and (max-width:576px){
+  .header-parent{
+    flex-direction:column;
+    padding-left:10px;
+    padding-right:10px;
+  }
+  .header-image img{
+    width:100%;
+  }
+  .featured-flowers-cards-parent{
+    flex-direction:column;
+  }
+  .featured-flower-card-image{
+    width:100%;
+  }
+}
