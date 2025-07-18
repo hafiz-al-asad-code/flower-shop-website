@@ -30,6 +30,7 @@
 }
 .bg-for-discount-section{
   background-color:rgba(229, 84, 115, 0.05);
+  border-radius: 8px;
 }
 
 /* Header styles */
@@ -58,6 +59,9 @@
 }
 .header-contents{
   max-width: 708px;
+}
+.header-contents > button{
+  margin-top:32px;
 }
 
 /* Featured Flowers styles */
@@ -99,7 +103,10 @@
 .featured-flower-card-title a{
   color:rgb(39, 39, 39);
 }
-
+.featured-subtitle{
+  max-width: 594px;
+  margin:0 auto;
+}
 /* customer support related styled */
 .customer-support{
   background-color:rgba(39, 39, 39, 0.05);
@@ -108,6 +115,7 @@
   padding:85px 175px;
   gap:100px;
   margin-top:128px;
+  border-radius: 8px;
 }
 .support-title{
   font-size:1.5rem;
@@ -123,6 +131,9 @@
   padding:100px 150px;
   justify-content: space-between;
   text-align:center;
+}
+.discount-contents > button{
+  margin-top:32px;
 }
 
 /* instagram related styles */
@@ -152,9 +163,10 @@
   margin-top:128px;
   text-align: center;
   align-items: center;
+  margin-bottom:128px;
 }
 .deals-input input{
-  font-size:16px;
+  font-size:1rem;
   font-weight: 400;
   color:rgba(39, 39, 39, 0.6);
   padding:22px 513px 22px 22px;
@@ -170,6 +182,34 @@
 .latest-deals p{
   margin-top:16px;
   margin-bottom:48px;
+}
+
+/* footer related styles */
+footer{
+  background-color:rgb(17, 16, 16);
+  text-align:center;
+  padding-top:128px;
+  padding-bottom:128px;
+}
+.footer-title{
+  font-size:3rem;
+  font-weight:800;
+  color:rgb(229, 84, 115);
+}
+.footer-subtitle{
+  font-size:1.125rem;
+  font-weight:400;
+  color:rgba(255, 255, 255, 0.9);
+  /* margin-top:25px;
+  margin-bottom:82px; */
+  max-width:625px;
+  margin:0 auto;
+}
+.footer-copyright{
+  font-size:1rem;
+  font-weight:400;
+  color:rgba(255, 255, 255, 0.4);
+  margin-top:32px;
 }
 
 /* Responsive media query */
@@ -201,7 +241,7 @@
     grid-template-columns:repeat(1, 1fr);
   }
   .latest-deals{
-    padding:20px 18px;
+    padding:60px 18px;
   }
   .deals-input input{
     padding:20px 20px;
@@ -215,5 +255,12 @@
   }
   .latest-deals p{
     margin-bottom:48px;
+  }
+  footer{
+    padding-top:60px;
+    padding-bottom:60px;
+  }
+  .footer-title{
+    margin-top:0;
   }
 }
