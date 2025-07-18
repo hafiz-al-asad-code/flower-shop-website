@@ -28,6 +28,9 @@
   font-weight:400;
   color:rgba(39, 39, 39, 0.6);
 }
+.bg-for-discount-section{
+  background-color:rgba(229, 84, 115, 0.05);
+}
 
 /* Header styles */
 .header-image img{
@@ -114,15 +117,31 @@
 
 /* discount related styles */
 .discount{
-  background-color:rgba(229, 84, 115, 0.05);
   margin-top:128px;
   gap:186px;
   align-items:center;
-  padding:100px 429px 100px 395px;
-}
-.discount-contents{
-  max-width:594px;
+  padding:100px 150px;
+  justify-content: space-between;
   text-align:center;
+}
+
+/* instagram related styles */
+.instagram{
+  text-align:center;
+  margin-top:128px;
+} 
+.instagram-images{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:24px;
+}
+.instagram-contents{
+  max-width:594px;
+  margin:0 auto;
+}
+.instagram-contents p{
+  margin-top:24px;
+  margin-bottom:48px;
 }
 
 /* Responsive media query */
@@ -149,5 +168,8 @@
     flex-direction:column;
     gap:40px;
     padding:20px 20px;
+  }
+  .instagram-images{
+    grid-template-columns:repeat(1, 1fr);
   }
 }
