@@ -19,12 +19,12 @@
   border:none;
 }
 .title-primary{
-  font-size:40px;
+  font-size:2.5rem;
   font-weight:800;
   color:rgb(39, 39, 39);
 }
 .subtitle-primary{
-  font-size:18px;
+  font-size:1.125rem;
   font-weight:400;
   color:rgba(39, 39, 39, 0.6);
 }
@@ -144,6 +144,34 @@
   margin-bottom:48px;
 }
 
+/* latest deals related styles */
+.latest-deals{
+  background-image:url('../images/Rectangle\ 9.png');
+  background-repeat:no-repeat;
+  padding:122px 287px;
+  margin-top:128px;
+  text-align: center;
+  align-items: center;
+}
+.deals-input input{
+  font-size:16px;
+  font-weight: 400;
+  color:rgba(39, 39, 39, 0.6);
+  padding:22px 513px 22px 22px;
+  border-radius:8px;
+  border:none;
+  background-color:rgb(255, 255, 255);
+  margin-right:16px;
+}
+.latest-deals h3{
+  margin-top:0;
+  margin-bottom:0;
+}
+.latest-deals p{
+  margin-top:16px;
+  margin-bottom:48px;
+}
+
 /* Responsive media query */
 @media screen and (max-width:576px){
   .header-parent{
@@ -171,5 +199,21 @@
   }
   .instagram-images{
     grid-template-columns:repeat(1, 1fr);
+  }
+  .latest-deals{
+    padding:20px 18px;
+  }
+  .deals-input input{
+    padding:20px 20px;
+    margin-right:0;
+  }
+  .deals-input{
+    flex-direction: column;
+  }
+  .deals-button{
+    margin-top:10px;
+  }
+  .latest-deals p{
+    margin-bottom:48px;
   }
 }
